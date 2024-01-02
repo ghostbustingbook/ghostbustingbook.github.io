@@ -1,0 +1,96 @@
+/* 1. General Styling */
+
+:root { 
+     	--fs-main: clamp(1.2rem, 2.5vw, 1.46rem); 
+	
+	--clr-links-base: #40F0E0;
+	--clr-links-hover: #11FF00;
+	
+	--clr-nav-bg: rgba(100, 100, 100, 0.7);
+	--clr-nav-border: rgba(0, 115, 255, 0.5);
+	--clr-index-bg: rgba(0, 50, 120, 0.7);
+	--clr-yuko: #26619C;
+}
+
+body {
+	margin: 0;
+	
+	background-image: url('../pix/limanu.jpeg');
+	background-size: cover;
+	background-repeat: none;
+	background-attachment: fixed;
+	
+	word-wrap: break-word;
+	font-size: var(--fs-main);
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: var(--clr-links-base);
+}
+
+a:hover {
+	color: var(--clr-links-hover);
+}
+
+a:active {
+	color: lightgreen;
+	border: 2px solid red;
+}
+
+.center {
+	text-align: center;
+}
+
+
+/* 2. header */
+
+header {
+	background-color: var(--clr-yuko);
+	overflow: hidden;
+	
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+header h1 {
+	padding: 0rem 1.1rem;
+}
+
+
+/* 3. Navigation  */
+
+nav a {
+	background-color: var(--clr-nav-bg);
+	padding: 0.5rem 0.55rem;
+	border-inline: 0.3rem solid var(--clr-nav-border);
+	
+	display: inline-block; /* Display on multiple lines if no room without breaking up options across lines, as is the case for inline  */
+	margin: 0.2rem 0.3rem;
+}
+
+
+/* 4. Index Styling (main) */
+
+main {
+	width: 80%;
+	margin-top: 3rem;
+	margin-inline: auto;
+
+	background-color: var(--clr-index-bg);
+	border: 4px solid blue;
+}
+
+main h1, main h2, main p {
+	width: min(75ch, 90%);
+	margin-inline: auto;
+}
+
+.heading, .partheading {
+        margin-top: 2.7rem;
+	
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
